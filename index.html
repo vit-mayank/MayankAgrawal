@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Agrawal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/JavaScript"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="navbar-name">
+                    <div class="name"><a href="#">Mayank Agrawal</a></div>
+                    <div class="light-dark-mode-div" onclick="changeMode(1)"><img id="light-dark-mode" src="images/day-mode.png" alt="dark"></div>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="#education"><div class="navbar-item">Education</div></a>
+                <a href="#skills"><div class="navbar-item">Skills</div></a>
+                <a href="#projects"><div class="navbar-item">Projects</div></a>
+                <a href="#achievements"><div class="navbar-item">Achievements</div></a>
+                <a href="#contact"><div class="navbar-item">Contact</div></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <div class="intro-pic">
+                <img src="images/mayank.jpg">
+            </div>
+            <div class="intro-text">
+                <h1 class="intro-name name">Mayank Agrawal</h1>
+                <h2> A bit about me</h2>
+                <p>                    
+                    Hello! I'm Mayank Agrawal, currently pursuing a Bachelor of Technology in Computer Science and Engineering at Vellore Institute of Technology (VIT) College. I am interested in programming and chess.
+                </p>
+            </div>
+        </div>
+        <div class="education" id="education">
+            <div class="space"></div>
+            <div class="title"><h1>Education</h1></div>
+            <div class="timeline">
+                <div class="timeline-component timeline-text timeline-text-right">
+                    <h1>VIT Vellore</h1><hr>
+                    <h2>Bachelors in Technology (B.Tech)</h2><hr>
+                    <h3>Specialization: CSE</h3>
+                </div>
+                <div class="timeline-component timeline-mid"><div class="timeline-point"></div></div>
+                <div class="timeline-component">2022</div>
+                <div class="timeline-component timeline-date-right">2018-2022</div>
+                <div class="timeline-component timeline-mid"><div class="timeline-point"></div></div>
+                <div class="timeline-component timeline-text">
+                    <h1>DAV Nepal</h1><hr>
+                    <h2>Higher Secondary Education</h2><hr>
+                    <h3>Major : Computer Science</h3>
+                </div>
+                <div class="timeline-component timeline-text timeline-text-right">
+                    <h1>Euro School</h1><hr>
+                    <h2>Primary Education</h2>
+                </div>
+                <div class="timeline-component timeline-mid"><div class="timeline-point"></div><div class="timeline-point timeline-point-bottom"></div></div>
+                <div class="timeline-component">2011-2018</div>
+            </div>
+        </div>
+        
+        <div class="skills" id="skills">
+            <div class="space"></div>
+            <div class="title"><h1>Skills</h1></div>
+            <div class="skills-row">
+                <img src="images/python.png"> 
+                <img src="images/c.webp">
+                <img src="images/cpp.webp">
+                <img src="images/java.png">
+            </div>
+            <div class="skills-row">
+                <img src="images/html5.png">
+                <img src="images/css3.png">
+                <img src="images/js.png">
+                <img src="images/mysql.png">
+            </div>
+            <div class="skills-row">
+                <img src="images/wordpress.webp">
+                <img src="images/git.png">
+                <img src="images/github.png">
+            </div>
+            <div class="skills-row">
+                <img src="images/vscode.png">
+                <img src="images/Intellij.png">
+                <img src="images/windows.png">
+            </div>
+        </div>
+        <div class="project" id="projects">
+            <div class="space"></div>
+            <div class="title"><h1>Projects</h1></div>
+            <div class="project-row">
+                <div class="project-items">
+                    <div class="project-image" onclick="oppen(0)"><img src="images/voice_assistant.jpeg" alt="Voice Assistant"></div>
+                    <div class="project-desc">The <b>Virtual Voice Assistant</b> project is a Python-based application designed to provide users with a convenient to interact with their computer using voice commands. Leveraging the power of <b>Speech Recognition libraries</b>, this project enables users to perform various tasks hands-free, simply by speaking to their computer.</div><hr>
+                    <div class="project-link"><a href="" target="_blank"><div class="github-box">Github</div></a></div>
+                </div>
+                <div class="project-items">
+                    <div class="project-image" onclick="oppen(1)"><img src="images/datacollection.png" alt="Voice Assistant"></div>
+                    <div class="project-desc">The <b>Customer Data Collection Application </b>is a user-friendly desktop application built using <b>Tkinter</b>, a popular Python GUI toolkit. This project aims to streamline the process of collecting and managing customer information for businesses by providing a simple and intuitive interface for data entry and storage.</div><hr>
+                    <div class="project-link"><a href="" target="_blank"><div class="github-box">Github</div></a></div>
+                </div>
+            </div>
+            <div class="project-row">
+                <div class="project-items">
+                    <div class="project-image" onclick="oppen(2)"><img src="images/portfolio.png" alt="Voice Assistant"></div>
+                    <div class="project-desc">The <b>Personal Portfolio</b> Website project is a dynamic and visually appealing online platform created using a combination of <b>HTML, CSS, and JavaScript</b>. This project serves as a digital showcase for me to present my skills, experiences, projects, and accomplishments in an engaging and professional manner.</div><hr>
+                    <div class="project-link"><a href="" target="_blank"><div class="github-box">Website</div></a></div>
+                </div>
+                <div class="project-items">
+                    <div class="project-image" onclick="oppen(3)"><img src="images/group_project.png" alt="Voice Assistant"></div>
+                    <div class="project-desc">The <b>Customer Data Collection Application </b>is a user-friendly desktop application built using <b>Tkinter</b>, a popular Python GUI toolkit. This project aims to streamline the process of collecting and managing customer information for businesses by providing a simple and intuitive interface for data entry and storage.</div><hr>
+                    <div class="project-link"><a href="https://vit-mayank.github.io/" target="_blank"><div class="github-box">Website</div></a></div>
+                </div>
+            </div>
+            <div class="window"></div>
+            <div id="project-window1" class="project-window">
+                <div class="project-window-menubar">
+                    <div class="project-window-title">Voice Assisstant</div>
+                    <div class="project-window-close-btn" onclick="closse(0)">&#10060;</div>
+                </div>
+                <div class="project-window-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magni quia voluptatibus nisi. Illo quo rem repudiandae dolores fugit temporibus, aut distinctio nemo minus assumenda est magnam soluta, officia earum vitae porro ipsum molestias fuga sit quidem consectetur. Minima laudantium neque, eos autem ut itaque nostrum ipsa illo odio amet, pariatur adipisci tempora laborum iure ratione ducimus! Nam cupiditate at animi pariatur distinctio incidunt similique perferendis adipisci, autem ad fugit debitis dolores hic ratione laborum quas quasi sint rem eius voluptatum velit corporis repellendus iure! Vel, autem doloribus! Voluptatum omnis esse nobis voluptate maxime explicabo ipsum exercitationem culpa, dolore iure nam repudiandae odit nulla quisquam saepe cum hic est sunt quam voluptatem fugit quidem iusto nihil error. Dignissimos ad quod soluta est porro autem ea obcaecati? A voluptatibus autem quo quae fuga eveniet odit reprehenderit, sint ut, fugiat quisquam blanditiis modi mollitia odio delectus vel doloribus laborum. Totam natus id, nisi velit, quae quia in expedita animi facere atque cupiditate. Blanditiis animi debitis, consequuntur alias omnis atque cumque excepturi obcaecati vel at possimus placeat itaque ab? Sint eius, sed minima nostrum maiores earum odit blanditiis voluptate, cum illum dolorum doloribus? Necessitatibus reiciendis nobis, eius vitae similique eum dicta culpa debitis?
+                </div>
+            </div>
+            <div id="project-window2" class="project-window">
+                <div class="project-window-menubar">
+                    <div class="project-window-title">Customer Data Collection</div>
+                    <div class="project-window-close-btn" onclick="closse(1)">&#10060;</div>
+                </div>
+                <div class="project-window-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magni quia voluptatibus nisi. Illo quo rem repudiandae dolores fugit temporibus, aut distinctio nemo minus assumenda est magnam soluta, officia earum vitae porro ipsum molestias fuga sit quidem consectetur. Minima laudantium neque, eos autem ut itaque nostrum ipsa illo odio amet, pariatur adipisci tempora laborum iure ratione ducimus! Nam cupiditate at animi pariatur distinctio incidunt similique perferendis adipisci, autem ad fugit debitis dolores hic ratione laborum quas quasi sint rem eius voluptatum velit corporis repellendus iure! Vel, autem doloribus! Voluptatum omnis esse nobis voluptate maxime explicabo ipsum exercitationem culpa, dolore iure nam repudiandae odit nulla quisquam saepe cum hic est sunt quam voluptatem fugit quidem iusto nihil error. Dignissimos ad quod soluta est porro autem ea obcaecati? A voluptatibus autem quo quae fuga eveniet odit reprehenderit, sint ut, fugiat quisquam blanditiis modi mollitia odio delectus vel doloribus laborum. Totam natus id, nisi velit, quae quia in expedita animi facere atque cupiditate. Blanditiis animi debitis, consequuntur alias omnis atque cumque excepturi obcaecati vel at possimus placeat itaque ab? Sint eius, sed minima nostrum maiores earum odit blanditiis voluptate, cum illum dolorum doloribus? Necessitatibus reiciendis nobis, eius vitae similique eum dicta culpa debitis?
+                </div>
+            </div>
+            <div id="project-window3" class="project-window">
+                <div class="project-window-menubar">
+                    <div class="project-window-title">Personal Portfolio</div>
+                    <div class="project-window-close-btn" onclick="closse(2)">&#10060;</div>
+                </div>
+                <div class="project-window-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magni quia voluptatibus nisi. Illo quo rem repudiandae dolores fugit temporibus, aut distinctio nemo minus assumenda est magnam soluta, officia earum vitae porro ipsum molestias fuga sit quidem consectetur. Minima laudantium neque, eos autem ut itaque nostrum ipsa illo odio amet, pariatur adipisci tempora laborum iure ratione ducimus! Nam cupiditate at animi pariatur distinctio incidunt similique perferendis adipisci, autem ad fugit debitis dolores hic ratione laborum quas quasi sint rem eius voluptatum velit corporis repellendus iure! Vel, autem doloribus! Voluptatum omnis esse nobis voluptate maxime explicabo ipsum exercitationem culpa, dolore iure nam repudiandae odit nulla quisquam saepe cum hic est sunt quam voluptatem fugit quidem iusto nihil error. Dignissimos ad quod soluta est porro autem ea obcaecati? A voluptatibus autem quo quae fuga eveniet odit reprehenderit, sint ut, fugiat quisquam blanditiis modi mollitia odio delectus vel doloribus laborum. Totam natus id, nisi velit, quae quia in expedita animi facere atque cupiditate. Blanditiis animi debitis, consequuntur alias omnis atque cumque excepturi obcaecati vel at possimus placeat itaque ab? Sint eius, sed minima nostrum maiores earum odit blanditiis voluptate, cum illum dolorum doloribus? Necessitatibus reiciendis nobis, eius vitae similique eum dicta culpa debitis?
+                </div>
+            </div>
+            <div id="project-window4" class="project-window">
+                <div class="project-window-menubar">
+                    <div class="project-window-title">Group Project</div>
+                    <div class="project-window-close-btn" onclick="closse(3)">&#10060;</div>
+                </div>
+                <div class="project-window-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia magni quia voluptatibus nisi. Illo quo rem repudiandae dolores fugit temporibus, aut distinctio nemo minus assumenda est magnam soluta, officia earum vitae porro ipsum molestias fuga sit quidem consectetur. Minima laudantium neque, eos autem ut itaque nostrum ipsa illo odio amet, pariatur adipisci tempora laborum iure ratione ducimus! Nam cupiditate at animi pariatur distinctio incidunt similique perferendis adipisci, autem ad fugit debitis dolores hic ratione laborum quas quasi sint rem eius voluptatum velit corporis repellendus iure! Vel, autem doloribus! Voluptatum omnis esse nobis voluptate maxime explicabo ipsum exercitationem culpa, dolore iure nam repudiandae odit nulla quisquam saepe cum hic est sunt quam voluptatem fugit quidem iusto nihil error. Dignissimos ad quod soluta est porro autem ea obcaecati? A voluptatibus autem quo quae fuga eveniet odit reprehenderit, sint ut, fugiat quisquam blanditiis modi mollitia odio delectus vel doloribus laborum. Totam natus id, nisi velit, quae quia in expedita animi facere atque cupiditate. Blanditiis animi debitis, consequuntur alias omnis atque cumque excepturi obcaecati vel at possimus placeat itaque ab? Sint eius, sed minima nostrum maiores earum odit blanditiis voluptate, cum illum dolorum doloribus? Necessitatibus reiciendis nobis, eius vitae similique eum dicta culpa debitis?
+                </div>
+            </div>
+        </div>
+        <div class="achievements" id="achievements">
+            <div class="space"></div>
+            <div class="title"><h1>Achievements</h1></div>
+            <div class="achievement-item">
+                <div class="achievement-image"><img src="images/chess1.jpeg"></div>
+                <div class="achievement-desc">Emerging victorious in the inaugural MYM Chess Tournament was a crowning achievement, marked by strategic brilliance and unwavering focus. Through each calculated move, I navigated the complexities of the chessboard with precision and foresight, outmaneuvering opponents and seizing victory at every turn. This triumph was not merely a display of skill, but a testament to dedication and perseverance, as I tirelessly prepared and honed my abilities for this moment. Winning the MYM Chess Tournament not only solidified my position as a formidable player but also marked a milestone in my journey. It is a proud reminder that with strategic planning and unwavering resolve, any challenge can be conquered.</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-desc">Securing the title of 2nd Runner-Up in the esteemed Second MYM Chess Tournament stands as another noteworthy achievement, further solidifying my prowess and dedication to the game. Building upon my victory in the tournament's inaugural edition, this accomplishment demonstrates my consistent performance and enduring commitment to excellence. Throughout the competition, I engaged in strategic battles, displaying resilience and tactical finesse against formidable adversaries. Earning the position of 2nd Runner-Up underscores my enduring competitive spirit and relentless pursuit of improvement. This achievement serves as a testament to my unwavering dedication to chess, inspiring me to continue honing my skills and striving for success in future endeavors.</div>
+                <div class="achievement-image"><img src="images/chess2.jpeg"></div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="space"></div>
+            <div class="title"><h1>Get in Touch</h1></div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Name"><br>
+                    <input type="text" placeholder="Email"><br>
+                    <textarea placeholder="Message"></textarea><br>
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+        <div class="space"></div>
+        <hr>
+        <footer>
+            <div class="footer">
+                <div class="footer-name name"><a href="#"><h1>Mayank Agrawal</h1></a></div>
+                <div class="footer-line2 footer-line">Feel free to contact me, Anytime</div>
+                <div class="footer-line3 footer-line">I'm available for projects on a freelance, commercial basis to new and existing clients. Based in India, available worldwide.</div>
+                <div class="footer-line4 footer-line">Email: mayank.agrawal2022@vitstudents.ac.in</div>
+            </div>
+        </footer>
+    </div> 
+</body>
+</html>
