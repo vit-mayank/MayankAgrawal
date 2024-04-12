@@ -42,11 +42,10 @@ a{
     cursor: pointer;
 }
 .light-dark-mode-div img{
-    height:50%;
+    height:5vh;
 }
 .navbar-right{
     display: flex;
-    width: 47%;
     text-align: center;
     justify-content: space-around;
 }
@@ -57,6 +56,24 @@ a{
 }
 .navbar-item:hover{
     background-color: white;
+}
+.alert{
+    display: none;
+    background-color: lightblue;
+    color:black;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    top:10vh;
+    height: 8vh;
+    z-index: 2;
+}
+.alert-text{
+    margin:2vh 3%;
+}
+.alert-cross{
+    margin: 2vh 3%;
+    cursor: pointer;
 }
 .container{
     margin-top: 10vh;
@@ -71,12 +88,13 @@ a{
 }
 .intro-pic{
     width:50%;
-    height: 80vh;
+    height:460px;
+    /* height: 80vh; */
 }
 .intro-pic img{
     float:right;
     height: 100%;
-    width: 70%;
+    width: 460px;
     padding-right: 10px;
     border-radius: 100%;
     object-fit: cover;
@@ -156,10 +174,10 @@ a{
     position: relative;
     left:50%;
     transform: translateX(-50%);
-    width:40%;
+    width:100%;
 }
 .skills-row{
-    margin-top: 10px;
+    margin: 10px 30% 0 30%;
     display: flex;
     justify-content:space-evenly;
     height:10vh;
@@ -172,7 +190,7 @@ a{
 }
 .project-items{
     width: 35%;
-    height:480px;
+    height:fit-content;
     border:1px solid;
     border-radius: 25px;
 }
@@ -189,18 +207,19 @@ a{
 .project-desc{
     padding: 20px 20px 0 20px;
     line-height: 1.5rem;
-    height: 150px;
+    height: fit-content;
 }
 .github-box{
     width:100px;
     background-color: rgb(231, 65, 231);
     position: relative;
     left:50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     text-align: center;
     padding:10px;
     border-radius: 25px;
-    color:white
+    color:white;
+    margin-bottom: 2%;
 }
 .window{
     top:0;

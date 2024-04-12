@@ -17,16 +17,24 @@
                 </div>
             </div>
             <div class="navbar-right">
-                <a href="#education"><div class="navbar-item">Education</div></a>
-                <a href="#skills"><div class="navbar-item">Skills</div></a>
-                <a href="#projects"><div class="navbar-item">Projects</div></a>
-                <a href="#achievements"><div class="navbar-item">Achievements</div></a>
-                <a href="#contact"><div class="navbar-item">Contact</div></a>
+                <a href="#education"><div class="navbar-item" onclick="navbarSelect(0)">Education</div></a>
+                <a href="#skills"><div class="navbar-item" onclick="navbarSelect(1)">Skills</div></a>
+                <a href="#projects"><div class="navbar-item" onclick="navbarSelect(2)">Projects</div></a>
+                <a href="#achievements"><div class="navbar-item" onclick="navbarSelect(3)">Achievements</div></a>
+                <a href="#contact"><div class="navbar-item" onclick="navbarSelect(4)">Contact</div></a>
             </div>
         </div>
     </nav>
+    <div class="alert">
+        <div class="alert-text">
+            <span id="alert-heading">Thank You for the Feedback.</span>
+        </div>
+        <div class="alert-cross" onclick="closeAlert()">
+            &#10060;
+        </div>
+    </div>
     <div class="container">
-        <div class="intro">
+        <div class="intro" onmouseover="navbarSelect(-1)">
             <div class="intro-pic">
                 <img src="images/mayank.jpg">
             </div>
@@ -38,7 +46,7 @@
                 </p>
             </div>
         </div>
-        <div class="education" id="education">
+        <div class="education" onmouseover="navbarSelect(0)" id="education">
             <div class="space"></div>
             <div class="title"><h1>Education</h1></div>
             <div class="timeline">
@@ -65,7 +73,7 @@
             </div>
         </div>
         
-        <div class="skills" id="skills">
+        <div class="skills" id="skills" onmouseover="navbarSelect(1)">
             <div class="space"></div>
             <div class="title"><h1>Skills</h1></div>
             <div class="skills-row">
@@ -91,14 +99,14 @@
                 <img src="images/windows.png">
             </div>
         </div>
-        <div class="project" id="projects">
+        <div class="project" id="projects" onmouseover="navbarSelect(2)" >
             <div class="space"></div>
             <div class="title"><h1>Projects</h1></div>
             <div class="project-row">
                 <div class="project-items">
                     <div class="project-image" onclick="oppen(0)"><img src="images/voice_assistant.jpeg" alt="Voice Assistant"></div>
                     <div class="project-desc">The <b>Virtual Voice Assistant</b> project is a Python-based application designed to provide users with a convenient to interact with their computer using voice commands. Leveraging the power of <b>Speech Recognition libraries</b>, this project enables users to perform various tasks hands-free, simply by speaking to their computer.</div><hr>
-                    <div class="project-link"><a href="" target="_blank"><div class="github-box">Github</div></a></div>
+                    <div class="project-link"><a href="https://github.com/vit-mayank/MayankAgrawal" target="_blank"><div class="github-box">Github</div></a></div>
                 </div>
                 <div class="project-items">
                     <div class="project-image" onclick="oppen(1)"><img src="images/datacollection.png" alt="Voice Assistant"></div>
@@ -152,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div class="achievements" id="achievements">
+        <div class="achievements" id="achievements" onmouseover="navbarSelect(3)"  >
             <div class="space"></div>
             <div class="title"><h1>Achievements</h1></div>
             <div class="achievement-item">
@@ -164,15 +172,15 @@
                 <div class="achievement-image"><img src="images/chess2.jpeg"></div>
             </div>
         </div>
-        <div class="contact" id="contact">
+        <div class="contact" id="contact" onmouseover="navbarSelect(4)" >
             <div class="space"></div>
             <div class="title"><h1>Get in Touch</h1></div>
             <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Name"><br>
-                    <input type="text" placeholder="Email"><br>
-                    <textarea placeholder="Message"></textarea><br>
-                    <button type="submit">Send</button>
+                <form id="contact-form">
+                    <input type="text" placeholder="Name" name="name" id="form-name" required><br>
+                    <input type="email" placeholder="Email" name="email" id="form-email" required><br>
+                    <textarea placeholder="Message" name="message" id="form-message" required></textarea><br>
+                    <button onclick="submitform()">Send</button>
                     <button type="reset">Reset</button>
                 </form>
             </div>
@@ -184,7 +192,7 @@
                 <div class="footer-name name"><a href="#"><h1>Mayank Agrawal</h1></a></div>
                 <div class="footer-line2 footer-line">Feel free to contact me, Anytime</div>
                 <div class="footer-line3 footer-line">I'm available for projects on a freelance, commercial basis to new and existing clients. Based in India, available worldwide.</div>
-                <div class="footer-line4 footer-line">Email: mayank.agrawal2022@vitstudents.ac.in</div>
+                <div class="footer-line4 footer-line">Email: mayank.agrawal2022@vitstudent.ac.in</div>
             </div>
         </footer>
     </div> 

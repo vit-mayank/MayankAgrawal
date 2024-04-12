@@ -27,3 +27,31 @@ function changeMode(x){
     }
     document.getElementsByClassName("light-dark-mode-div")[0].setAttribute("onclick","changeMode("+((x+1)%2)+")")
 }
+function navbarSelect(x){
+    for(i=0;i<5;i++){
+        if(i!=x){
+            document.getElementsByClassName("navbar-item")[i].style.backgroundColor="gainsboro";
+        }
+    }
+    if(x!=-1){
+        document.getElementsByClassName("navbar-item")[x].style.backgroundColor="lightblue";
+    }
+}
+function submitform(){
+    var name=document.getElementById("form-name").value
+    var email=document.getElementById("form-email").value
+    var message=document.getElementById("form-message").value
+    console.log(name+email+message)
+   
+    var frm=document.getElementById("contact-form")
+    if (name!="" && message!="" && email.match("^[a-z]+[0-9]*([\._]*[a-z0-9]+)*@[a-z]+([\.]*[a-z]+)*$")){
+        frm.reset()
+        showAlert()
+    }
+}
+function showAlert(){
+    document.getElementsByClassName("alert")[0].style.display="flex"
+}
+function closeAlert(){
+    document.getElementsByClassName("alert")[0].style.display="none"
+}
