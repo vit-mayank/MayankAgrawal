@@ -459,7 +459,7 @@ img {
 .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: var(--transition);
 }
 
@@ -499,20 +499,57 @@ img {
 
 .project-links {
     display: flex;
-    gap: 15px;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .project-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    padding: 8px 15px;
+    border-radius: 6px;
     font-size: 0.9rem;
-    color: var(--primary-color);
-    transition: var(--transition);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.project-link:hover {
-    color: var(--secondary-color);
+.github-link {
+    background-color: rgba(46, 164, 79, 0.1);
+    color: #2ea44f;
+    border: 1px solid rgba(46, 164, 79, 0.2);
+}
+
+.github-link:hover {
+    background-color: rgba(46, 164, 79, 0.2);
+}
+
+.demo-link {
+    background-color: rgba(0, 116, 204, 0.1);
+    color: #0074cc;
+    border: 1px solid rgba(0, 116, 204, 0.2);
+}
+
+.demo-link:hover {
+    background-color: rgba(0, 116, 204, 0.2);
+}
+
+.case-study-link {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: #6c757d;
+    border: 1px solid rgba(108, 117, 125, 0.2);
+}
+
+.case-study-link:hover {
+    background-color: rgba(108, 117, 125, 0.2);
+}
+
+/* Hide links if href is empty */
+.project-link[href=""],
+.project-link:not([href]) {
+    display: none;
 }
 
 /* Achievements Section */
